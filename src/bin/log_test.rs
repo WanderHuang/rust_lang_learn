@@ -1,6 +1,7 @@
-mod utils;
+extern crate test_lang;
 
-use utils::log::*;
+use test_lang::prelude::*;
+
 
 fn main() {
     // println!("Hello, world!");

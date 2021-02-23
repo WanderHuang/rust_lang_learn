@@ -20,4 +20,15 @@ fn main() {
     LogLevel::Warn.note_def(["You have a problem!"].to_vec(), "Run");
     LogLevel::Error.note_def(["You have a problem!"].to_vec(), "Dead");
 
+    let mut man = Man {
+        name: "wander",
+        x: 0,
+        y: 0,
+        z: 0
+    };
+
+    man.step(1, 1);
+    man.step(-1, 3);
+    man.step(4, -4);
+
 }

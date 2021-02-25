@@ -1,9 +1,17 @@
 extern crate test_lang;
 
+#[macro_use]
+extern crate log;
+
 use test_lang::prelude::*;
 
 
 fn main() {
+
+    env_logger::init();
+
+    info!("Logger is start!!");
+
     // println!("Hello, world!");
     info(["Hello World!"].to_vec());
     warn(["Hello World!"].to_vec());
